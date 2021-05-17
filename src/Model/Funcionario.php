@@ -9,9 +9,9 @@ class Funcionario extends Pessoa
     protected string $cargo;
     protected float $salario;
 
-    public function __construct(string $cargo, float $salario)
+    public function __construct(string $nome, string $cpf, string $cargo, float $salario)
     {
-        // parent::__construct($nome, $cpf);
+        parent::__construct($nome, $cpf);
         $this->cargo = $cargo;
         $this->salario = $salario;
     }
